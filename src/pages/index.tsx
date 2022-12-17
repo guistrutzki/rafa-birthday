@@ -2,13 +2,13 @@ import { PolaroidCard } from '../components/PolaroidCard';
 import * as S from '../styles/styles';
 
 export default function Home() {
-  const images = [1, 2, 3];
+  const images = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 
   return (
     <S.Container>
       <S.HeroSection>
         <h1>Fazendinha da Rafa</h1>
-        <p>Comemoração dos dois aninhos de aniversário</p>
+        <p>Comemoração de aniversários dos dois aninhos</p>
 
         <S.FenceImg src="/images/fence.png" />
         <S.RafaImg src="/images/rafa-image.png" />
@@ -18,7 +18,6 @@ export default function Home() {
         <S.ChickImg src="/images/chick.png" />
         <S.LinesImg src="/images/lines.png" />
         <S.FlowerImg src="/images/flower.png" />
-        <S.GardenForkImg src="/images/garden-fork.png" />
         <S.HorseImg src="/images/horse.png" />
       </S.HeroSection>
 
