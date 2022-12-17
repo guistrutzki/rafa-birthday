@@ -7,7 +7,6 @@ export const Container = styled.main`
   flex: 1;
   width: 100%;
   min-height: 100vh;
-  overflow: hidden;
 `
 
 export const HeroSection = styled.div`
@@ -15,6 +14,7 @@ export const HeroSection = styled.div`
   background-color: #4BB0B3;
   position: relative;
   height: 90vh;
+  overflow-x: hidden;
 
   h1 {
     color: #ffffff;
