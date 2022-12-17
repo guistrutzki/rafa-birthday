@@ -7,6 +7,7 @@ export const Container = styled.main`
   flex: 1;
   width: 100%;
   min-height: 100vh;
+  overflow: hidden;
 `
 
 export const HeroSection = styled.div`
@@ -93,14 +94,14 @@ export const RafaImg = styled.img`
   z-index: 10;
 
   @media ${devices.small} {
-    width: 350px;
+    width: 40vh;
     right: 50%;
     bottom: 50px;
     transform: translate(60%);
   }
 
   @media ${devices.medium} {
-    width: 400px;
+    width: 45vh;
     right: 50%;
     transform: translate(60%);
   }
