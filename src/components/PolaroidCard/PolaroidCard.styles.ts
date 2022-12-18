@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  min-width: 280px;
+  max-width: 340px;
   flex: 1;
   height: 380px;
   background-color: #fff;
@@ -9,8 +9,9 @@ export const Container = styled.div`
   padding: 24px 16px 0;
 `
 
-export const Image = styled.div`
+export const Image = styled.img`
   width: 100%;
   height: 85%;
-  background-color: red;
+  background-color: rgba(0, 0, 0, 0.1);
+  object-fit: cover;
 `

@@ -2,7 +2,28 @@ import { PolaroidCard } from '../components/PolaroidCard';
 import * as S from '../styles/styles';
 
 export default function Home() {
-  const images = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+  const images = [
+    {
+      id: '1',
+      url: 'https://drive.google.com/uc?export=view&id=1Ci0CTKt7w0Ipw5lcEOyttvnqTZjVHxxV',
+    },
+    {
+      id: '2',
+      url: 'https://drive.google.com/uc?export=view&id=1ZWR5QqNYNp_-ha72lmGfgxDhjJtbdjv5',
+    },
+    {
+      id: '3',
+      url: 'https://drive.google.com/uc?export=view&id=1R684LmUrsqulhyGpziqLl28G5D6FY7y2',
+    },
+    {
+      id: '4',
+      url: 'https://drive.google.com/uc?export=view&id=1pLdjwUnjKqgEUI7pE4ndUtra9Q3nn0DK',
+    },
+    {
+      id: '5',
+      url: 'https://drive.google.com/uc?export=view&id=1Uc-mdkH6PDV9F2lDEGkRcVwnPeM3TKZI',
+    },
+  ];
 
   return (
     <S.Container>
@@ -27,7 +48,7 @@ export default function Home() {
           <h2>Galeria de fotos</h2>
           <S.PolaroidContainer>
             {images.map((eachImage) => (
-              <PolaroidCard key={String(eachImage)} />
+              <PolaroidCard key={eachImage.id} imageUrl={eachImage.url} />
             ))}
           </S.PolaroidContainer>
         </S.GalleryContent>

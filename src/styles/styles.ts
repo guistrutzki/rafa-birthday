@@ -315,10 +315,22 @@ export const GallerySection = styled.div`
 export const GalleryContent = styled.div`
   z-index: 999;
   position: absolute;
-  top: -200px;
+  
   left: 0;
   right: 0;
   width: 100%;
+
+  @media ${devices.small} {
+    top: -220px;
+  }
+
+  @media ${devices.medium} {
+    top: -200px;
+  }
+
+  @media ${devices.large} {
+    top: -200px;
+  }
 
   h2 {
     font-size: 52px;
@@ -326,12 +338,35 @@ export const GalleryContent = styled.div`
     margin: 60px;
     margin-top: 300px;
     background-color: #fff;
+
+    @media ${devices.small} {
+      font-size: 32px;
+    }
+
+    @media ${devices.medium} {
+      font-size: 40px;
+    }
+
+    @media ${devices.large} {
+      font-size: 52px;
+    }
   }
 `
 
 export const PolaroidContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: 42px;
   margin: 60px 60px 60px;
+
+  @media ${devices.small} {
+    grid-template-columns: 1fr;
+  }
+
+  @media ${devices.medium} {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media ${devices.large} {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 `

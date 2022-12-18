@@ -1,9 +1,13 @@
 import * as S from './PolaroidCard.styles';
 
-export const PolaroidCard = () => {
+interface PolaroidCardProps {
+  imageUrl: string;
+}
+
+export const PolaroidCard = ({ imageUrl }: PolaroidCardProps) => {
   return (
     <S.Container>
-      <S.Image />
+      <S.Image src={imageUrl} />
     </S.Container>
   );
 };
